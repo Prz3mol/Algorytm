@@ -1,16 +1,11 @@
-# This is a sample Python script.
+def sito(n):
+    kandydat = [1 for x in range(n+1)]
+    pierwsze = []
+    for i in range(2,n+1):
+        if kandydat[i] != 0:
+            pierwsze.append(i)
+            for j in range(i+i,n+1,i):
+                kandydat[j]=0
+    return pierwsze
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+print(sito(100))
