@@ -1,11 +1,16 @@
 def sito(n):
-    kandydat = [1 for x in range(n+1)]
-    pierwsze = []
-    for i in range(2,n+1):
-        if kandydat[i] != 0:
-            pierwsze.append(i)
-            for j in range(i+i,n+1,i):
-                kandydat[j]=0
-    return pierwsze
+    kandydat = list(range(n+1))
+    kandydat.remove(0)
+    kandydat.remove(1)
+    for dzielnik in kandydat:
+        for liczba in kandydat:
+            if liczba == dzielnik:
+                continue
+            if liczba % dzielnik == 0:
+                print(f"liczba {liczba}")
+                print(f"dzielnik {dzielnik}")
+                kandydat.remove(liczba)
+
+    return kandydat
 
 print(sito(100))
