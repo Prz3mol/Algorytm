@@ -12,5 +12,3 @@ def sito(n):
                 kandydat.remove(liczba)
 
     return kandydat
-
-print(sito(100))
