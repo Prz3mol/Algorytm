@@ -6,7 +6,7 @@ def sito(n):
         for liczba in kandydat:
             if liczba == dzielnik:
                 continue
-            if liczba % dzielnik == 0:https://github.com/Prz3mol/Algorytm/blob/main/main.py
+            if liczba % dzielnik == 0:
                 kandydat.remove(liczba)
     return kandydat
 
