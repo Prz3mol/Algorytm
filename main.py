@@ -14,9 +14,6 @@ def cezar(txt):
     key = -4
     zaszyfrowany_wyraz = ""
     for znak in txt:
-        #print(znak)
-        #print(ord(znak))
         przesunieta = ord(znak) + key
-        #print(przesunieta)
         zaszyfrowany_wyraz += chr(przesunieta)
     print(zaszyfrowany_wyraz)
