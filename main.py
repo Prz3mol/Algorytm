@@ -17,3 +17,7 @@ def cezar(txt):
         przesunieta = ord(znak) + key
         zaszyfrowany_wyraz += chr(przesunieta)
     print(zaszyfrowany_wyraz)
+
+    
+#Palimdrom
+#anagram tablica wystapien 
