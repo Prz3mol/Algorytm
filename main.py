@@ -7,8 +7,10 @@ def sito(n):
             if liczba == dzielnik:
                 continue
             if liczba % dzielnik == 0:
-                print(f"liczba {liczba}")
-                print(f"dzielnik {dzielnik}")
                 kandydat.remove(liczba)
-
     return kandydat
+
+def cezar(txt):
+    key = 5
+    for i in range(len(txt)):
+        pass
