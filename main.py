@@ -18,6 +18,14 @@ def cezar(txt):
         zaszyfrowany_wyraz += chr(przesunieta)
     print(zaszyfrowany_wyraz)
 
-    
+def anagram(s1, s2):
+    if (sorted(s1) == sorted(s2)):
+        print("jest to anagram")
+    else:
+        print("nie jest anagramem")
+
+anagram("listen", "silent")
+
+
 #Palimdrom
 #anagram tablica wystapien 
