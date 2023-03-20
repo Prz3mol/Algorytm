@@ -6,11 +6,17 @@ def sito(n):
         for liczba in kandydat:
             if liczba == dzielnik:
                 continue
-            if liczba % dzielnik == 0:
+            if liczba % dzielnik == 0:https://github.com/Prz3mol/Algorytm/blob/main/main.py
                 kandydat.remove(liczba)
     return kandydat
 
 def cezar(txt):
-    key = 5
-    for i in range(len(txt)):
-        pass
+    key = -4
+    zaszyfrowany_wyraz = ""
+    for znak in txt:
+        #print(znak)
+        #print(ord(znak))
+        przesunieta = ord(znak) + key
+        #print(przesunieta)
+        zaszyfrowany_wyraz += chr(przesunieta)
+    print(zaszyfrowany_wyraz)
