@@ -18,13 +18,19 @@ def cezar(txt):
         zaszyfrowany_wyraz += chr(przesunieta)
     print(zaszyfrowany_wyraz)
 
-def anagram(s1, s2):
-    if (sorted(s1) == sorted(s2)):
-        print("jest to anagram")
-    else:
-        print("nie jest anagramem")
 
-anagram("listen", "silent")
+def anagram():
+    with open("C:\\Users\\ADMINISTATOREK\\Desktop\\Anagramy.txt", "r", encoding="UTF-8") as f:
+        for line in f:
+            if line is None:
+                continue
+            line = line.replace("\n", "")
+            line = line.split(",")
+            print(line)
+            if (sorted(line[0]) == sorted(line[1])):
+                print("jest to anagram")
+            else:
+                print("nie jest anagramem")
 
 
 #Palimdrom
