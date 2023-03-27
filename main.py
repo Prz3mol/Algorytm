@@ -31,6 +31,17 @@ def anagram():
                 print("jest to anagram")
             else:
                 print("nie jest anagramem")
+                
+def palim():
+    with open("C:\\Users\\ADMINISTATOREK\\Desktop\\python\\palimdromy.txt", "r", encoding="UTF-8") as f:
+        for line in f:
+            if line is None:
+                continue
+            line = line.lstrip().rstrip().replace(" ", "")
+            if (line == line[::-1]):
+                print(line + " JEST palimdromem")
+            else:
+                print(line + " NIE jest palimdromem")
 
 
 #Palimdrom
